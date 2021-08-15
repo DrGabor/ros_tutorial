@@ -2,6 +2,7 @@
 <launch>
   <arg name="message" default="This is my first ros hello world!" />
   <node pkg="hello_world" type="hello" name="hello_alising" output="screen">
+    <param name="file_name" value="/home/gabor/data/cloud_map.pcd"/>
     <param name="message" value="$(arg message)" />
     <param name="beg_x" value="1.0"/>
     <param name="beg_y" value="1.0"/>

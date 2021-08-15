@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="message" default="This is my first ros hello world!" />
+  <node pkg="hello_world" type="hello" name="hello_alising" output="screen">
+    <param name="message" value="$(arg message)" />
+    <param name="beg_x" value="1.0"/>
+    <param name="beg_y" value="1.0"/>
+    <param name="beg_z" value="1.0"/>
+    <param name="end_x" value="2.0"/>
+    <param name="end_y" value="2.0"/>
+    <param name="end_z" value="2.0"/>
+  </node>
+
+</launch>
